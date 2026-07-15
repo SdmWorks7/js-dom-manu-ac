@@ -1,0 +1,51 @@
+getElementById() - returns the element or null
+    document.getElementById("id");
+
+getElementByClassName() - returns elemets as an html collection or empty collection
+    document.getElementByClassName("hey");
+
+getElementByTagName()- returns elements as an html collection
+    document.getElementByTagName("p");
+
+querySelector() - freq used, selects the obj you want
+    querySelector('p'); - gives the first p 
+    querySelector('#myId'); - gives the first element of this id (same for class)
+    querySelector("div li a"); - selects the a in the li which is again contaoned in div.
+
+querySelectorAll('p'); selects all the para.
+
+obj.getAttribute(attr); - gives the va;ue of the given attr.
+
+obj.setAttribute(attr, val); - sets a vlaue for a goven attribute 
+
+obj.style.colour(or any attr)- changes styles BUT ONLY IN INLINE STYLES AND NOT CSS STYLES
+
+ using classList
+obj.classList
+
+classList.add() to add new classes
+
+classList.remove() to remove classes
+
+classList.contains() to check if class exists
+
+classList.toggle() to toggle between add & remove
+
+ ADDING elements
+    document.createElement("p");
+
+    appendChiild(element)
+    append(element)- adds string/text/button/anything but in the last 
+    prepend(element); - adds in the starting baaki it is same as append
+    insertAdjacentElement(where, element)
+                            |          
+                            /
+                    beforebegin
+                    beforeend
+                    afterbegin
+                    afterend
+
+ REMOVING elements
+    body.removeChild(btn);
+    btn.remove();
+                       
