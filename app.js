@@ -20,3 +20,34 @@ head.classList.add("blue");
  div.appendChild(ch1);
  div.appendChild(cp);
 
+
+ // ques 1;
+
+ let input = document.createElement("input");
+ let btn = document.createElement("button");
+ btn.innerHTML="Click me!";
+
+ let body=document.querySelector("body");
+ body.append(input);
+ body.append(btn);
+
+ //ques 2;
+
+ input.setAttribute("placeholder", "username");
+ btn.setAttribute("id","btn");
+
+ //ques 3:
+
+ document.querySelector("#btn").classList.add("button");
+
+ //ques 4:
+ let head1= document.createElement("h1");
+ head1.innerHTML="<u>DOM practice</u>";
+
+ //self
+ 
+ body.append(head1);
+
+
+
+
