@@ -48,4 +48,30 @@ classList.toggle() to toggle between add & remove
  REMOVING elements
     body.removeChild(btn);
     btn.remove();
+
+----------------DOM EVENTS-------------------
+  *onclick
+  *onmouseenter(when mouse enters an element)
+
+  btn.onclick = function (){
+    console.log("btn was clicked");
+  }
+
+  btn.addEventListner("click", function(){
+    console.log("the button was clicked")
+  })
+
+
+KEYBOARD EVENTS
+
+xyz.addEventListner("click", function(event){
+    if(event.code == "ArrowUp")
+    console.log("the character moved forward");
+
+})
+
+form.addEventListner("submit", function(event){
+     event.preventDefault();
+     alert("hey, the form was subm");
+})
                        
