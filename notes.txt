@@ -74,4 +74,18 @@ form.addEventListner("submit", function(event){
      event.preventDefault();
      alert("hey, the form was subm");
 })
+
+
+EVENT BUBBLING 
+
+xyz.addEventListner("click", function(event){
+    event.stopPropogation();
+    //code
+})
+
+        it stops event bubbling, as in it does not trigger the parent's state when the child is triggered
+
+#event.target -> this gives the exact element of the whole setup
+
+event.target.parentElement -> this gives the actual parent of the setup
                        
